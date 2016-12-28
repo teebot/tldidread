@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose');
-const DATABASE = process.env.DATABASE || 'mongodb://192.168.99.100:27017/tldidread';
+const DATABASE = process.env.DATABASE || 'mongodb://localhost:27017/tldidread';
 
 mongoose.connect(DATABASE);
 
